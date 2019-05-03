@@ -1,0 +1,9 @@
+FlexboxLayout.page
+    StackLayout.form
+        Image.logo(src="~/app/assets/img/logo.png")
+        Label.header(text="Login Test")
+
+        StackLayout.input-field
+            TextField.input(hint="Email", keyboardType="email", autocorrect="false",
+                autocapitalizationType="none", [(ngModel)]="user.email", returnKeyType="next")
+            StackLayout.hr-light
